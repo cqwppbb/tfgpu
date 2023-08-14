@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
 from sklearn import datasets
-
+print("================================")
 #导入数据
 x_data = datasets.load_iris().data
 y_data = datasets.load_iris().target
@@ -45,7 +45,7 @@ epoch = 500
 loss_all = 0
 
 #训练部分
-for epoch in range(epoch):git
+for epoch in range(epoch):
     for step,(x_train,y_train) in enumerate(train_db):
         with tf.GradientTape() as tape:
             y = tf.matmul(x_train, w1) + b1
