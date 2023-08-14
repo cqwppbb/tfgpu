@@ -60,5 +60,6 @@ for epoch in range(epoch):git
         b1.assign_sub(grads[1]*lr)
 
     print("Epoch{},loss:{}".format(epoch,loss/4))
+    print("Epoch{},loss:{}".format(epoch,loss))
     train_loss_results.append(loss_all/4)
     loss_all = 0
